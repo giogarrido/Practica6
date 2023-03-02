@@ -5,27 +5,80 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/black"
+    android:background="@color/gray"
     tools:context=".Catalogo">
 
-    <TextView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Peliculas &amp; series"
-        android:fontFamily="sans-serif-light"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/yellow"
-        android:paddingLeft="20sp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peliculas"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/yellow"
+            android:textColor="@color/yellow"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="33dp"/>
+
+
+    </LinearLayout>
+
 
     <GridView
-        android:id="@+id/gridview"
+        android:id="@+id/gv_peliculas_catalogo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/yellow"
+        android:layout_height="260dp"
+        android:layout_marginTop="18dp"
         android:numColumns="3"
-        />
+        android:paddingHorizontal="6dp" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+
+            android:layout_width="260dp"
+            android:layout_height="2dp"
+            android:textColor="@color/yellow"
+            android:background="@color/yellow"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="33dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Series"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_series_catalogo"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:numColumns="3"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="6dp"/>
 </LinearLayout>

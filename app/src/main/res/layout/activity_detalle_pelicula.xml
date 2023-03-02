@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/black"
-    tools:context=".detalle_pelicula">
+    tools:context=".Detalle_pelicula">
 
 
     <LinearLayout
@@ -36,9 +36,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="30dp"
+            android:justificationMode="inter_word"
             android:text="aqui la descripción de la película"
             android:textSize="14sp"
-            android:textColor="@color/yellow"/>
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
